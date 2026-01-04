@@ -1,0 +1,133 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #0073b1;
+    font-size: 35px;
+}
+
+h2 {
+    color: #0073b1;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+h3 {
+    color: #0073b1;
+}
+
+p {
+    margin: 0;
+}
+
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.restaurant h3 {
+    color: #005f99;
+    margin: 5px 0;
+}
+
+.restaurant h3 a {
+    color: #005f99;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.restaurant h3 a:hover {
+    text-decoration: underline;
+}
+
+.restaurant h4 {
+    margin: 0;
+}
+
+.restaurant p {
+    margin: 5px 10%;
+}
+
+.restaurant-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (min-width: 900px) {
+    .restaurant-section {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .restaurant {
+        text-align: center;
+        flex: 1 1 calc(50% - 10px);
+        box-sizing: border-box;
+    }
+}
+
+nav {
+    background-color: #0073b1;
+    top: 0;
+    width: 100%;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+nav a {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    nav {
+     display: flex;
+     flex-direction: column;
+     align-items: center; 
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+    .back-to-top:hover {
+    background-color: #0056b3;
+}
